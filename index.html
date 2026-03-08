@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Олимпиадный навигатор - онлайн школа подготовки к олимпиадам. Индивидуальные образовательные траектории, наставничество, доступ в закрытый канал с мероприятиями. Цены от 4900 до 14900 руб/мес.">
+    <meta name="keywords" content="олимпиады, подготовка к олимпиадам, онлайн школа, индивидуальное обучение, наставничество, образовательные траектории, олимпиадный навигатор">
+    <meta name="author" content="Олимпиадный навигатор">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://34.162.163.0/">
+    <meta property="og:title" content="Олимпиадный навигатор - Подготовка к олимпиадам онлайн">
+    <meta property="og:description" content="Индивидуальные образовательные траектории, наставничество и поддержка. Подготовка к олимпиадам с профессионалами. От 4900 руб/мес.">
+    <meta property="og:image" content="http://34.162.163.0/logo.webp">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://34.162.163.0/">
+    <meta property="twitter:title" content="Олимпиадный навигатор - Подготовка к олимпиадам онлайн">
+    <meta property="twitter:description" content="Индивидуальные образовательные траектории, наставничество и поддержка. Подготовка к олимпиадам с профессионалами. От 4900 руб/мес.">
+    <meta property="twitter:image" content="http://34.162.163.0/logo.webp">
+    
+    <title>Олимпиадный навигатор - Подготовка к олимпиадам онлайн</title>
+    <script src="https://cdn.tailwindcss.com?v=2"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        burgundy: {
+                            50: '#fce8ec',
+                            100: '#f9d1d9',
+                            200: '#f3a3b3',
+                            300: '#ed758d',
+                            400: '#c94a6b',
+                            500: '#8B1538',
+                            600: '#7a1230',
+                            700: '#690f28',
+                            800: '#580c20',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-burgundy {
+            background: linear-gradient(135deg, #690f28 0%, #580c20 100%);
+        }
+        
+        /* Cookie Consent Styles */
+        #cookieConsent {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: white;
+            border: 2px solid #8B1538;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(139, 21, 56, 0.3);
+            z-index: 9999;
+            max-width: 500px;
+            animation: slideUp 0.5s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @media (max-width: 640px) {
+            #cookieConsent { left: 10px; right: 10px; bottom: 10px; }
+        }
+    </style>
+    
+    <!-- Schema.org structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Олимпиадный навигатор",
+        "description": "Онлайн-школа подготовки к олимпиадам с индивидуальными образовательными траекториями",
+        "url": "http://34.162.163.0",
+        "logo": "http://34.162.163.0/logo.webp",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+7-XXX-XXX-XX-XX",
+            "contactType": "Customer Service",
+            "availableLanguage": "Russian"
+        },
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Базовый пакет",
+                "price": "4900",
+                "priceCurrency": "RUB",
+                "description": "Базовая подготовка к олимпиадам"
+            },
+            {
+                "@type": "Offer",
+                "name": "Стандарт пакет",
+                "price": "9900",
+                "priceCurrency": "RUB",
+                "description": "Углубленная подготовка к олимпиадам"
+            },
+            {
+                "@type": "Offer",
+                "name": "Премиум пакет",
+                "price": "14900",
+                "priceCurrency": "RUB",
+                "description": "Интенсивная подготовка к олимпиадам высшего уровня"
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" style="display: none;">
+        <div class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-burgundy-700 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <div class="flex-1">
+                <h3 class="font-bold text-gray-800 mb-2">Мы используем cookies</h3>
+                <p class="text-sm text-gray-600 mb-4">Мы используем файлы cookie для улучшения работы сайта и анализа трафика. Продолжая использовать сайт, вы соглашаетесь с использованием cookies.</p>
+                <div class="flex gap-3">
+                    <button onclick="acceptCookies()" class="bg-burgundy-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-burgundy-700 transition">
+                        Принять
+                    </button>
+                    <button onclick="declineCookies()" class="bg-gray-200 text-gray-700 px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 transition">
+                        Отклонить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="logo.webp" alt="Oxvil Education Logo" class="w-14 h-14 rounded-lg object-cover">
+                    <span class="text-2xl font-bold text-gray-800">Oxvil <span class="text-burgundy-700">Education</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-burgundy-700 transition">О школе</a>
+                    <a href="#courses" class="text-gray-600 hover:text-burgundy-700 transition">Курсы</a>
+                    <a href="#contact" class="text-gray-600 hover:text-burgundy-700 transition">Контакты</a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-burgundy-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 transition-all duration-300 ease-in-out opacity-0 transform -translate-y-2">
+                <div class="container mx-auto px-4 py-4">
+                    <a href="#about" class="block py-3 text-gray-600 hover:text-burgundy-700 transition border-b border-gray-100">О школе</a>
+                    <a href="#courses" class="block py-3 text-gray-600 hover:text-burgundy-700 transition border-b border-gray-100">Курсы</a>
+                    <a href="#contact" class="block py-3 text-gray-600 hover:text-burgundy-700 transition">Контакты</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-burgundy text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-xl md:text-2xl font-bold mb-6 leading-tight">
+                    Составляем траекторию поступления и ведём к цели!
+                </h1>
+                <div class="mt-4 flex justify-center">
+                    <img src="logo.webp" alt="Оксвиль Логотип" class="h-48 md:h-64 lg:h-80 object-contain animate-fade-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Контакты</h2>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-gray-800">Свяжитесь с нами</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <svg class="w-6 h-6 text-burgundy-700 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                    <div>
+                                        <p class="font-semibold text-gray-800">Email</p>
+                                        <p class="text-gray-600">oxvil.edu@yandex.ru</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <svg class="w-6 h-6 text-burgundy-700 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                    <div>
+                                        <p class="font-semibold text-gray-800">Телефон</p>
+                                        <p class="text-gray-600">+7 (916) 805-12-34</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Enrollment Form Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <!-- Форма записи -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800 text-center">Записаться на курс</h3>
+                    <form id="enrollForm" class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Ваше имя *</label>
+                            <input type="text" id="userName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-burgundy-700 focus:border-transparent" placeholder="Введите ваше имя">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Телефон *</label>
+                            <input type="tel" id="userPhone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-burgundy-700 focus:border-transparent" placeholder="+7 (___) ___-__-__">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Интересующий курс *</label>
+                            <select id="userCourse" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-burgundy-700 focus:border-transparent">
+                                <option value="">Выберите курс</option>
+                                <option value="Олимпиадный навигатор">Олимпиадный навигатор</option>
+                                <option value="Полное сопровождение ОГЭ">Полное сопровождение ОГЭ</option>
+                                <option value="Полное сопровождение ЕГЭ">Полное сопровождение ЕГЭ</option>
+                                <option value="Полное сопровождение + ЕГЭ и олимпиады">Полное сопровождение + ЕГЭ и олимпиады</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Комментарий</label>
+                            <textarea id="userComment" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-burgundy-700 focus:border-transparent" placeholder="Дополнительная информация (необязательно)"></textarea>
+                        </div>
+                        <div class="text-sm text-gray-600 text-center mb-4">
+                            Нажимая кнопку, вы соглашаетесь с <a href="privacy" target="_blank" class="text-burgundy-700 hover:text-burgundy-700 underline">политикой конфиденциальности</a>
+                        </div>
+                        <button type="submit" class="w-full bg-burgundy-700 text-white py-4 px-6 rounded-lg font-semibold hover:bg-burgundy-700 transition duration-300 shadow-lg hover:shadow-xl">
+                            Записаться через Telegram
+                        </button>
+                    </form>
+                </div>
+
+                <script>
+                // Автоматическое форматирование телефона
+                const phoneInput = document.getElementById('userPhone');
+                phoneInput.addEventListener('input', function(e) {
+                    let value = e.target.value.replace(/\D/g, '');
+                    
+                    if (value.length > 0) {
+                        if (value[0] === '8') {
+                            value = '7' + value.substring(1);
+                        } else if (value[0] !== '7') {
+                            value = '7' + value;
+                        }
+                    }
+                    
+                    let formatted = '';
+                    if (value.length > 0) {
+                        formatted = '+7';
+                        if (value.length > 1) {
+                            formatted += ' (' + value.substring(1, 4);
+                        }
+                        if (value.length >= 4) {
+                            formatted += ') ' + value.substring(4, 7);
+                        }
+                        if (value.length >= 7) {
+                            formatted += '-' + value.substring(7, 9);
+                        }
+                        if (value.length >= 9) {
+                            formatted += '-' + value.substring(9, 11);
+                        }
+                    }
+                    
+                    e.target.value = formatted;
+                });
+
+                document.getElementById('enrollForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const name = document.getElementById('userName').value;
+                    const phone = document.getElementById('userPhone').value;
+                    const course = document.getElementById('userCourse').value;
+                    const comment = document.getElementById('userComment').value;
+                    
+                    let message = `Здравствуйте! Хочу записаться на курс в Oxvil Education 🎓\n\n`;
+                    message += `👤 Имя: ${name}\n`;
+                    message += `📞 Телефон: ${phone}\n`;
+                    message += `📚 Курс: ${course}`;
+                    
+                    if (comment) {
+                        message += `\n💬 Комментарий: ${comment}`;
+                    }
+                    
+                    const telegramUrl = `https://t.me/annastasiia71?text=${encodeURIComponent(message)}`;
+                    window.open(telegramUrl, '_blank');
+                });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Оксвиль</h2>
+                <div class="prose prose-lg mx-auto text-gray-600">
+                    <p class="text-lg leading-relaxed mb-6">
+                        Составляем траекторию поступления и ведём к цели!
+                    </p>
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">Персональный подход к каждому ученику на его пути к вузу мечты</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-xl font-bold mb-3 text-burgundy-700">Индивидуальный план подготовки</h4>
+                            <p class="text-lg leading-relaxed">
+                                Разработка персональной образовательной траектории под конкретный вуз
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-3 text-burgundy-700">Обучение у тех, кто уже прошел этот путь</h4>
+                            <p class="text-lg leading-relaxed">
+                                Наши наставники - молодые таланты, готовые делиться своим опытом как в теории так и на практике. Еще вчера - победители всероссийских олимпиад и конкурсов. Сегодня - твой лучший помощник на пути к мечте!
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-3 text-burgundy-700">Мы за понимание, а не за заучивание</h4>
+                            <p class="text-lg leading-relaxed">
+                                Комплексный подход
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-lg leading-relaxed">
+                                Все в одном месте - траектория, экзамены, олимпиады, а также подборка крутых мероприятий для активистов и наставничество в конкурсах за стенами школы.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Наши пакеты</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Package 1 - Олимпиадный навигатор -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2 duration-300">
+                        <div class="h-48 gradient-burgundy flex items-center justify-center">
+                            <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-800">Олимпиадный навигатор</h3>
+                            <div class="text-3xl font-bold text-burgundy-700 mb-4">От 4 900 ₽<span class="text-lg text-gray-500">/мес</span></div>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Подготовка к олимпиадам по выбранному направлению</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Индивидуальная образовательная траектория для поступления</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Доступ в закрытый канал с внеучебными мероприятиями и конкурсами</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Наставничество и поддержка на всех этапах подготовки</span>
+                                </li>
+            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Package 2 - Standard -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2 duration-300 border-2 border-burgundy-700">
+                        <div class="bg-burgundy-700 text-white text-center py-2 text-sm font-semibold">ПОПУЛЯРНЫЙ</div>
+                        <div class="h-48 gradient-burgundy flex items-center justify-center">
+                            <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-800">Полное сопровождение ОГЭ</h3>
+                            <div class="text-3xl font-bold text-burgundy-700 mb-4">От 9 900 ₽<span class="text-lg text-gray-500">/мес</span></div>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Индивидуальная образовательная траектория для поступления</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Комплексная подготовка по обязательным предметам</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Индивидуальные и групповые занятия</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Разработка персонального плана подготовки</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Консультации и сопровождение во время экзаменационной кампании</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Доступ в закрытый канал с внеклассными мероприятиями и конкурсами</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Package 3 - Premium -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2 duration-300">
+                        <div class="h-48 gradient-burgundy flex items-center justify-center">
+                            <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-800">Полное сопровождение ЕГЭ</h3>
+                            <div class="text-3xl font-bold text-burgundy-700 mb-4">От 10 900 ₽<span class="text-lg text-gray-500">/мес</span></div>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Индивидуальная образовательная траектория для поступления</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Подготовка по профильным и базовым предметам</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Индивидуальный план и дополнительные занятия по запросу</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Помощь в выборе стратегий сдачи и психологическая поддержка</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Доступ в закрытый канал с внеучебными мероприятиями и конкурсами</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Package 4: Полное сопровождение + ЕГЭ и олимпиады -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2 duration-300">
+                        <div class="h-48 gradient-burgundy flex items-center justify-center">
+                            <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-800">Полное сопровождение + ЕГЭ и олимпиады</h3>
+                            <div class="text-3xl font-bold text-burgundy-700 mb-4">От 14 900 ₽<span class="text-lg text-gray-500">/мес</span></div>
+                        <div class="space-y-4">
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Все услуги из пакетов «Полное сопровождение ЕГЭ» и «Олимпиадный навигатор» вместе</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Проработка сложных тем и приоритетных задач по олимпиадному направлению</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Персональная поддержка наставников и педагогов</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-burgundy-700 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600">Доступ в закрытый канал с внеучебными мероприятиями и конкурсами</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Почему выбирают нас</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-burgundy rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Гибкий график</h3>
+                        <p class="text-gray-600">Учитесь в удобное для вас время</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-burgundy rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Опытные преподаватели</h3>
+                        <p class="text-gray-600">Профессионалы своего дела</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-burgundy rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Сертификаты</h3>
+                        <p class="text-gray-600">Подтверждение ваших знаний</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-burgundy rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Результативность</h3>
+                        <p class="text-gray-600">Проверенные методики обучения</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Наши преподаватели</h2>
+            
+            <!-- Subject Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <div class="relative inline-block">
+                    <button id="subjectDropdownBtn" class="filter-btn active px-6 py-3 rounded-lg font-semibold transition duration-300 bg-burgundy-700 text-white hover:bg-burgundy-800 flex items-center gap-2">
+                        <span id="selectedSubject">Русский язык / Обществознание</span>
+                        <svg class="w-5 h-5 transition-transform duration-200" id="dropdownIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="subjectDropdown" class="hidden absolute top-full left-0 mt-2 bg-white rounded-lg shadow-xl border border-gray-200 min-w-full z-10">
+                        <button onclick="selectSubject('russian-social', 'Русский язык / Обществознание')" class="block w-full text-left px-6 py-3 hover:bg-gray-100 transition duration-200 text-gray-700 font-semibold">
+                            Русский язык / Обществознание
+                        </button>
+                        <button onclick="selectSubject('literature', 'Литература')" class="block w-full text-left px-6 py-3 hover:bg-gray-100 transition duration-200 text-gray-700 font-semibold ">
+                            Литература
+                        </button>
+                        <button onclick="selectSubject('russian', 'Русский язык')" class="block w-full text-left px-6 py-3 hover:bg-gray-100 transition duration-200 text-gray-700 font-semibold">
+                            Русский язык
+                        </button>
+                        <button onclick="selectSubject('math', 'Математика')" class="block w-full text-left px-6 py-3 hover:bg-gray-100 transition duration-200 text-gray-700 font-semibold">
+                            Математика
+                        </button>
+                        <button onclick="selectSubject('nastavnica', 'Наставница')" class="block w-full text-left px-6 py-3 hover:bg-gray-100 transition duration-200 text-gray-700 font-semibold">
+                            Наставница
+                        </button>
+                        <button onclick="selectSubject('english', 'Английский язык')" class="block w-full text-left px-6 py-3 hover:bg-gray-100 transition duration-200 text-gray-700 font-semibold">
+                            Английский язык
+                        </button>
+                        <button onclick="selectSubject('biology', 'Биология')" class="block w-full text-left px-6 py-3 hover:bg-gray-100 transition duration-200 text-gray-700 font-semibold">
+                            Биология
+                        </button>
+                        <button onclick="selectSubject('chemistry', 'Химия')" class="block w-full text-left px-6 py-3 hover:bg-gray-100 transition duration-200 text-gray-700 font-semibold">
+                            Химия
+                        </button>
+                        <button onclick="selectSubject('social-studies', 'Обществознание')" class="block w-full text-left px-6 py-3 hover:bg-gray-100 transition duration-200 text-gray-700 font-semibold rounded-b-lg">
+                            Обществознание
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                    
+                    <!-- Teacher Card: Strizhova Victoria -->
+                    <div class="teacher-card bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" data-subjects="russian-social">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img class="h-64 w-full md:w-64 object-cover" style="object-position: center 10%;" src="uploads/teachers/strizhova_victoria.jpg" alt="Стрижова Виктория">
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-red-900 font-semibold mb-2">Обществознание / Русский язык</div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Стрижова Виктория</h3>
+                                <div class="space-y-2 text-gray-600">
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                                        </svg>
+                                        <span><strong>ВУЗ:</strong> НИУ ВШЭ, «Юриспруденция»</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>ЕГЭ:</strong> 94 балла</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>Достижения:</strong> Победительница Всероссийской олимпиады «Высшая проба» по обществознанию</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+                                        </svg>
+                                        <span><strong>Конкурсы:</strong> Победительница конкурса «Человек и книга»</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="teacher-card bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" data-subjects="literature">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img class="h-64 w-full md:w-64 object-cover" style="object-position: center 10%;" src="uploads/teachers/kononova_ksenia.jpg" alt="Кононова Ксения">
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-red-900 font-semibold mb-2">Литература</div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Кононова Ксения</h3>
+                                <div class="space-y-2 text-gray-600">
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                                        </svg>
+                                        <span><strong>ВУЗ:</strong> НИУ ВШЭ, «Медиакоммуникации»</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>ЕГЭ:</strong> 92 балла</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>Достижения:</strong> Призер III Российско-Кыргызского медиафорума с проектом для телевидения</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="teacher-card bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" data-subjects="russian">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img class="h-64 w-full md:w-64 object-cover" style="object-position: center 10%;" src="uploads/teachers/yukhtarova_maria.jpg" alt="Юхтарова Мария">
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-red-900 font-semibold mb-2">Русский язык</div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Юхтарова Мария</h3>
+                                <div class="space-y-2 text-gray-600">
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                                        </svg>
+                                        <span><strong>ВУЗ:</strong> НИУ ВШЭ, «Юриспруденция»</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>ЕГЭ:</strong> 100 баллов</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>Достижения:</strong> Победительница всероссийской олимпиады «Высшая проба» по обществознанию, Победительница всероссийского конкурса «Большая перемена», «Твой ход»</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="teacher-card bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" data-subjects="math">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img class="h-64 w-full md:w-64 object-cover" style="object-position: center 10%;" src="uploads/teachers/samarin_alexey.jpg" alt="Самарин Алексей">
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-red-900 font-semibold mb-2">Математика</div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Самарин Алексей</h3>
+                                <div class="space-y-2 text-gray-600">
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>ЕГЭ:</strong> 93 балла</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>Достижения:</strong> Участник множества хакатонов и олимпиад, Участник проекта «Поколение»</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Teacher Card 5 -->
+                    <div class="teacher-card bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" data-subjects="nastavnica">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img class="h-64 w-full md:w-64 object-cover" style="object-position: center 10%;" src="uploads/teachers/karimova_shakhnoza.jpg" alt="Каримова Шахноза">
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-red-900 font-semibold mb-2">Наставница</div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Каримова Шахноза</h3>
+                                <div class="space-y-2 text-gray-600">
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                                        </svg>
+                                        <span><strong>ВУЗ:</strong> НИУ ВШЭ, «Юриспруденция»</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>Достижения:</strong> Победительница всероссийского конкурса «Большая перемена», призер международной олимпиады молодежи (МОМ) по праву и социальным наукам, участница Всемирного фестиваля молодежи 2024</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Teacher Card 6 -->
+                    <div class="teacher-card bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" data-subjects="english">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img class="h-64 w-full md:w-64 object-cover" style="object-position: center 10%;" src="uploads/teachers/trubnikova_zlata.jpg" alt="Трубникова Злата">
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-red-900 font-semibold mb-2">Английский язык</div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Трубникова Злата</h3>
+                                <div class="space-y-2 text-gray-600">
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                                        </svg>
+                                        <span><strong>ВУЗ:</strong> СЗИУ РАНХиГС, «Государственное и муниципальное управление»</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>ЕГЭ:</strong> 85+ баллов</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>Достижения:</strong> Двукратный победитель Всероссийского конкурса «Большая Перемена», участница Всемирного фестиваля молодежи 2024</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Teacher Card 7 -->
+                    <div class="teacher-card bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" data-subjects="biology">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img class="h-64 w-full md:w-64 object-cover" style="object-position: center 10%;" src="uploads/teachers/orlova_ekaterina.jpg" alt="Орлова Екатерина">
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-red-900 font-semibold mb-2">Биология</div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Орлова Екатерина</h3>
+                                <div class="space-y-2 text-gray-600">
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                                        </svg>
+                                        <span><strong>ВУЗ:</strong> СПбГПМУ</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>ЕГЭ:</strong> 91 баллов</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>Достижения:</strong> Призёр на региональном этапе ВСОШ по биологии за 11 класс, призёр перечневой олимпиады «Твой путь в настоящую науку» по биологии, призёр всероссийской олимпиады «Высшая проба» по обществознанию</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                    <!-- Teacher Card 8 -->
+                    <div class="teacher-card bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" data-subjects="chemistry">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img class="h-64 w-full md:w-64 object-cover" style="object-position: center 10%;" src="uploads/teachers/zyablykh_polina.jpg" alt="Зяблых Полина">
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-red-900 font-semibold mb-2">Химия</div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Зяблых Полина</h3>
+                                <div class="space-y-2 text-gray-600">
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                                        </svg>
+                                        <span><strong>ВУЗ:</strong> СПбГУ</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>ЕГЭ:</strong> 100 баллов</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>Достижения:</strong> Призёр регионального этапа ВСОШ по химии, победитель олимпиады «Ломоносов» по химии</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Teacher Card 9 -->
+                    <div class="teacher-card bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" data-subjects="social-studies">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img class="h-64 w-full md:w-64 object-cover" style="object-position: center 10%;" src="uploads/teachers/shnyra_anastasia.jpg" alt="Шныра Анастасия">
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-red-900 font-semibold mb-2">Обществознание</div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Шныра Анастасия</h3>
+                                <div class="space-y-2 text-gray-600">
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                                        </svg>
+                                        <span><strong>ВУЗ:</strong> МГУ</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>ЕГЭ:</strong> 94 балла</span>
+                                    </p>
+                                    <p class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-900 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>Достижения:</strong> Призёр регионального этапа ВСОШ по обществознанию, победитель олимпиады «Высшая проба» по обществознанию</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery Section: Top Universities & Students -->
+    <section id="gallery" class="py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Наши достижения
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Топовые вузы и наши студенты — гордость школы подготовки к ЕГЭ
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Image 1 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <img src="uploads/gallery/IMG_1257.jpg" alt="Топовый ВУЗ" class="w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Престижные университеты</h3>
+                            <p class="text-sm">Наши выпускники поступают в лучшие вузы страны</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <img src="uploads/gallery/IMG_1259.jpg" alt="Студенты" class="w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Успешные студенты</h3>
+                            <p class="text-sm">Дружная команда единомышленников</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <img src="uploads/gallery/IMG_1261.jpg" alt="Учебный процесс" class="w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Образовательная среда</h3>
+                            <p class="text-sm">Современные методики обучения</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <img src="uploads/gallery/IMG_1263.jpg" alt="Достижения" class="w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Высокие результаты</h3>
+                            <p class="text-sm">100 баллов на ЕГЭ — реальность</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <img src="uploads/gallery/IMG_1264.jpg" alt="Команда" class="w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Наша команда</h3>
+                            <p class="text-sm">Профессиональные преподаватели</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <img src="uploads/gallery/IMG_1265.jpg" alt="Мероприятия" class="w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Образовательные события</h3>
+                            <p class="text-sm">Участие в конкурсах и олимпиадах</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 7 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <img src="uploads/gallery/IMG_0754.jpeg" alt="Студенты за работой" class="w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Интенсивная подготовка</h3>
+                            <p class="text-sm">Индивидуальный подход к каждому</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 8 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <img src="uploads/gallery/IMG_0755.jpeg" alt="Учебные материалы" class="w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Качественные материалы</h3>
+                            <p class="text-sm">Авторские методики и пособия</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 9 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <img src="uploads/gallery/IMG_0756.jpeg" alt="Успех студентов" class="w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Путь к успеху</h3>
+                            <p class="text-sm">От подготовки до поступления</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-16">
+                <p class="text-lg text-gray-700 mb-6">Присоединяйтесь к нашим успешным выпускникам!</p>
+                <a href="#contact" class="inline-block bg-red-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-800 transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                    Записаться на курс
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- О школе -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="logo.webp" alt="Oxvil Education" class="w-12 h-12 rounded-lg object-cover">
+                        <span class="text-xl font-bold">Oxvil Education</span>
+                    </div>
+                    <p class="text-gray-400">Составляем траекторию поступления и ведём к цели!</p>
+                </div>
+                
+                <!-- Навигация -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Навигация</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-burgundy-700 transition">О нас</a></li>
+                        <li><a href="#courses" class="text-gray-400 hover:text-burgundy-700 transition">Курсы</a></li>
+                        <li><a href="#advantages" class="text-gray-400 hover:text-burgundy-700 transition">Преимущества</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-burgundy-700 transition">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Контакты -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Контакты</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://t.me/oxvil_edu" target="_blank" class="text-gray-400 hover:text-burgundy-700 transition flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
+                                </svg>
+                                Telegram: @oxvil_edu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://vk.com/oxvil_edu" target="_blank" class="text-gray-400 hover:text-burgundy-700 transition flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2zm3.45 14.88h-1.6c-.64 0-.83-.52-1.98-1.67-1-.89-1.44-1.01-1.69-1.01-.35 0-.44.09-.44.53v1.52c0 .41-.13.66-1.22.66-1.79 0-3.78-1.08-5.18-3.09-2.1-2.94-2.67-5.15-2.67-5.6 0-.25.09-.48.53-.48h1.6c.4 0 .55.18.7.61.77 2.16 2.07 4.05 2.6 4.05.2 0 .29-.09.29-.59v-2.29c-.06-1.01-.59-1.1-.59-1.46 0-.2.17-.4.43-.4h2.51c.34 0 .46.18.46.57v3.09c0 .34.15.46.25.46.2 0 .36-.12.73-.49 1.14-1.28 1.96-3.26 1.96-3.26.11-.23.28-.45.71-.45h1.6c.48 0 .58.24.48.57-.18.81-1.97 3.47-1.97 3.47-.17.27-.23.39 0 .69.17.23.73.71 1.1 1.14.68.78 1.21 1.43 1.35 1.88.14.45-.07.68-.61.68z"/>
+                                </svg>
+                                ВК: oxvil_edu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@oxvil_edu?_t=ZS-90ULO52OXYI" target="_blank" class="text-gray-400 hover:text-burgundy-700 transition flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                </svg>
+                                TikTok: @oxvil_edu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:oxvil.edu@yandex.ru" class="text-gray-400 hover:text-burgundy-700 transition flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                oxvil.edu@yandex.ru
+                            </a>
+                        </li>
+                        <li class="text-gray-400 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                            </svg>
+                            oxviledu.ru
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 text-center">
+                <p class="text-gray-500 text-sm">© 2026 Oxvil Education. Все права защищены. | <a href="privacy" class="text-gray-400 hover:text-burgundy-700 transition">Политика конфиденциальности</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Анимации появления -->
+    <style>
+        /* Базовые стили для анимаций */
+        .animate-on-scroll {
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .animate-on-scroll.animated {
+            opacity: 1;
+        }
+        
+        /* Появление снизу */
+        .fade-up {
+            transform: translateY(50px);
+        }
+        
+        .fade-up.animated {
+            transform: translateY(0);
+        }
+        
+        /* Появление слева */
+        .fade-left {
+            transform: translateX(-50px);
+        }
+        
+        .fade-left.animated {
+            transform: translateX(0);
+        }
+        
+        /* Появление справа */
+        .fade-right {
+            transform: translateX(50px);
+        }
+        
+        .fade-right.animated {
+            transform: translateX(0);
+        }
+        
+        /* Масштабирование */
+        .scale-up {
+            transform: scale(0.9);
+        }
+        
+        .scale-up.animated {
+            transform: scale(1);
+        }
+        
+        /* Задержки для последовательной анимации */
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
+        .delay-300 { transition-delay: 0.3s; }
+        .delay-400 { transition-delay: 0.4s; }
+        .delay-500 { transition-delay: 0.5s; }
+        
+        /* Плавное появление Hero секции */
+        .hero-animate {
+            animation: heroFadeIn 1.2s ease-out;
+        }
+        
+        @keyframes heroFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Пульсация для кнопок */
+        .pulse-on-hover:hover {
+            animation: pulse 1s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+
+    <script>
+        // Функция для проверки видимости элемента
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+            
+            // Элемент считается видимым, если хотя бы его часть находится в viewport
+            return (
+                rect.top < windowHeight &&
+                rect.bottom > 0 &&
+                rect.left < windowWidth &&
+                rect.right > 0
+            );
+        }
+        
+        // Функция для добавления анимации
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(element => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('animated');
+                }
+            });
+        }
+        
+        // Запуск при загрузке и прокрутке
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+        
+        // Добавление классов анимации к элементам
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hero секция
+            const heroSection = document.querySelector('#hero');
+            if (heroSection) {
+                heroSection.classList.add('hero-animate');
+            }
+            
+            // Секция "О нас"
+            const aboutSection = document.querySelector('#about');
+            if (aboutSection) {
+                const aboutTitle = aboutSection.querySelector('h2');
+                const aboutText = aboutSection.querySelectorAll('p');
+                if (aboutTitle) aboutTitle.classList.add('animate-on-scroll', 'fade-up');
+                aboutText.forEach((p, index) => {
+                    p.classList.add('animate-on-scroll', 'fade-up', `delay-${(index + 1) * 100}`);
+                });
+            }
+            
+            // Карточки курсов
+            const courseCards = document.querySelectorAll('#courses .bg-white');
+            courseCards.forEach((card, index) => {
+                card.classList.add('animate-on-scroll', 'scale-up', `delay-${index * 100}`);
+            });
+            
+            // Преимущества
+            const advantageCards = document.querySelectorAll('#advantages .bg-white');
+            advantageCards.forEach((card, index) => {
+                if (index % 2 === 0) {
+                    card.classList.add('animate-on-scroll', 'fade-left', `delay-${index * 100}`);
+                } else {
+                    card.classList.add('animate-on-scroll', 'fade-right', `delay-${index * 100}`);
+                }
+            });
+            
+            // Форма записи
+            const enrollForm = document.querySelector('#enrollForm');
+            if (enrollForm) {
+                enrollForm.closest('.bg-gradient-to-r').classList.add('animate-on-scroll', 'fade-up');
+            }
+            
+            // Контактная информация
+            const contactSection = document.querySelector('#contact');
+            if (contactSection) {
+                const contactCards = contactSection.querySelectorAll('.bg-white > div > div');
+                contactCards.forEach((card, index) => {
+                    card.classList.add('animate-on-scroll', 'fade-up', `delay-${index * 150}`);
+                });
+            }
+            
+            // Добавление пульсации к кнопкам
+            const buttons = document.querySelectorAll('button, .bg-burgundy-700');
+            buttons.forEach(btn => {
+                btn.classList.add('pulse-on-hover');
+            });
+            
+            // Первичная проверка видимости
+            animateOnScroll();
+        });
+    </script>
+
+    <!-- Cookie Consent Script -->
+    <script>
+        // Check if user has already made a choice
+        window.addEventListener('DOMContentLoaded', function() {
+            const cookieConsent = localStorage.getItem('cookieConsent');
+            if (!cookieConsent) {
+                document.getElementById('cookieConsent').style.display = 'block';
+            }
+        });
+
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieConsent').style.display = 'none';
+            // Here you can enable analytics/tracking scripts
+            console.log('Cookies accepted');
+        }
+
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'declined');
+            document.getElementById('cookieConsent').style.display = 'none';
+            console.log('Cookies declined');
+        }
+    </script>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', function() {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                
+                if (isHidden) {
+                    // Показываем меню
+                    mobileMenu.classList.remove('hidden');
+                    setTimeout(() => {
+                        mobileMenu.classList.remove('opacity-0', '-translate-y-2');
+                        mobileMenu.classList.add('opacity-100', 'translate-y-0');
+                    }, 10);
+                } else {
+                    // Скрываем меню
+                    mobileMenu.classList.remove('opacity-100', 'translate-y-0');
+                    mobileMenu.classList.add('opacity-0', '-translate-y-2');
+                    setTimeout(() => {
+                        mobileMenu.classList.add('hidden');
+                    }, 300);
+                }
+                
+                // Toggle icon between hamburger and X
+                const icon = this.querySelector('svg');
+                if (isHidden) {
+                    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+                } else {
+                    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+                }
+            });
+            
+            // Close mobile menu when clicking on a link
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    const icon = mobileMenuButton.querySelector('svg');
+                    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+                });
+            });
+        }
+
+        // Teacher Filter Function
+        // Toggle dropdown menu
+        document.getElementById('subjectDropdownBtn').addEventListener('click', function(e) {
+            e.stopPropagation();
+            const dropdown = document.getElementById('subjectDropdown');
+            const icon = document.getElementById('dropdownIcon');
+            dropdown.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            const dropdown = document.getElementById('subjectDropdown');
+            const btn = document.getElementById('subjectDropdownBtn');
+            if (!dropdown.contains(e.target) && !btn.contains(e.target)) {
+                dropdown.classList.add('hidden');
+                document.getElementById('dropdownIcon').classList.remove('rotate-180');
+            }
+        });
+
+        // Select subject and filter teachers
+        function selectSubject(subject, subjectName) {
+            document.getElementById('selectedSubject').textContent = subjectName;
+            document.getElementById('subjectDropdown').classList.add('hidden');
+            document.getElementById('dropdownIcon').classList.remove('rotate-180');
+            filterTeachers(subject);
+        }
+
+        function filterTeachers(subject) {
+            const teacherCards = document.querySelectorAll('.teacher-card');
+            
+            // Filter teachers
+            teacherCards.forEach(card => {
+                if (subject === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    const cardSubjects = card.getAttribute('data-subjects');
+                    if (cardSubjects === subject) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // Initialize: Show only russian-social teacher by default
+        document.addEventListener('DOMContentLoaded', function() {
+            filterTeachers('russian-social');
+        });
+    </script>
+</body>
+</html>

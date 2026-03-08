@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: http://34.162.163.0/sitemap.xml
+
+# Запрещаем индексацию служебных файлов
+Disallow: /cgi-bin/
+Disallow: /*.php$
